@@ -20,7 +20,7 @@ const fetch = (url, options) => {
   options = options || {};
   return new Promise(function (resolve, reject) {
     wx.request({
-      url,
+      url:'http://47.93.30.78:8080' + url,
       method: options.method || 'GET',
       data: options.body || {},
       header: options.headers || { 'content-type': 'application/json' },
