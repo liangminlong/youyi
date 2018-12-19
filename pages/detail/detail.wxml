@@ -1,0 +1,99 @@
+<wxs src="../../utils/helps.wxs" module="helps" />
+<view class="view-body">
+    
+<scroll-view class="scroll-view" scroll-y="true">
+
+    <!--banner 轮播图  -->
+    <swiper class="swiper-view" 
+      indicator-dots="true" 
+      indicator-color="white" 
+      indicator-active-color="#FF6802"
+      autoplay
+    >
+        <block wx:for="{{detailData.banners}}" wx:for-index="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" style="width:100%;height:100%"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <!--商品信息  -->
+    <view class="view-section1">
+        <text class="view-section1-text1">{{detailData.title}}\n</text>
+        <view class="view-section1-text2">{{detailData.descp}}\n</view>
+        <text class="view-section1-text3">{{detailData.price}}元\n</text>
+
+    </view>
+
+    <!--用户评论  -->
+    <view class="view-user">
+      <text>用户评价（{{detailData.userAssess.number}}）</text>
+      <text>查看全部评价</text>
+    </view>
+
+    <!--用户评价列表  -->
+    <block wx:for="{{detailData.userAssess.users}}">
+      <view class="view-user-assess">
+            <!--左边  -->
+            <view class="view-left-item">
+                <image src="../image/user-head.png"></image>
+            </view>
+            <!--右边  -->
+            <view class="view-right-item">
+                <text>{{item.name}}\n</text>
+                <text>{{item.msg}}\n</text>
+                <text>{{helps.formatTime(item.timeTamp)}}\n</text>
+            </view>
+      </view> 
+    </block>
+
+
+    <!--商品图文详情  -->
+    <view class="view-goods-detail">
+        <text style="color:{{tabIndex==0?'#FF6802':'#989898'}}" bindtap="onBindTap1">图文详情</text>
+        <text style="color:{{tabIndex==1?'#FF6802':'#989898'}}" bindtap="onBindTap2">产品参数</text>
+    </view>
+
+    <!--图文详情  -->
+    <view wx:if="{{tabIndex==0?true:false}}">
+        <block wx:for="{{detailData.detailparams}}">
+          <image src="{{item}}" style='width:100%;height:400rpx;'></image>
+        </block>
+    </view>
+    <!--产品参数  -->
+    <view wx:if="{{tabIndex==1?true:false}}">
+         <block wx:for="{{detailData.detailpics}}">
+              <image src="{{item}}" style='width:100%;height:400rpx;'></image>
+         </block>
+    </view>
+
+</scroll-view>
+
+
+
+
+
+
+    <!-- 底部购物车  -->
+    <view class="view-car">
+
+        <!--左  -->
+        <view class="view-car-top">
+            <image src="../image/car_small_icon.png" ></image>
+        </view>
+
+        <!--中  -->
+        <view class="view-car-center" bindtap="addToCar">
+          <text class="view-car-text">加购物车</text>
+        </view>
+
+        <!--右  -->
+        <view class="view-car-bottom">
+          <text class="view-car-text">立即购买</text>
+        </view>
+
+    </view>
+
+
+
+</view>

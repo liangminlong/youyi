@@ -1,0 +1,15 @@
+
+var timeTemp = function (strTimeTemp) {
+  //1.拿到date时间对象
+  var date = getDate();
+  console.log(date);
+  //2.重新设计时间
+  date.setTime(strTimeTemp);
+  //3.把时间格式化输出
+  return date.toLocaleDateString();
+}
+
+//4.声明导出函数
+module.exports = {
+  formatTime: timeTemp
+};

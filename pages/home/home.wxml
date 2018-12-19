@@ -1,0 +1,70 @@
+<view class="view-body">
+  
+  <!--search布局  -->
+  <view class="view-search">
+    <view class="view-search-bg">
+      <image src="{{searchIcon}}" class="image-search"></image>
+      <text class="text-title">搜索商品</text>
+    </view>
+  </view>
+
+  <!--banner 布局 -->
+  <swiper class="view-banner" indicator-dots="true"
+    indicator-color="white" indicator-active-color="#FF6802"
+  >
+     <navigator wx:for="{{result.banners}}"  wx:key="{{index}}"
+       url="../detail/detail?goodId=1000" 
+     >
+        <swiper-item>
+            <image src="{{item}}" class="image-banner"></image>
+        </swiper-item>
+    </navigator>
+  </swiper>
+
+<!--分类条布局  -->
+<view class="view-bar">
+  <block wx:for="{{result.tabBars}}"  wx:key="{{index}}">
+    <view class="view-bar-item">
+       <image src="{{item.inageurl}}" class="image-bar"></image>
+       <text class="text-bar-item">{{item.name}}</text>
+    </view>
+  </block>
+</view>
+
+<!--第一个item  -->
+<view class="view-section1">
+    <block wx:for="{{result.firstItems}}"  wx:key="{{index}}">
+       <navigator url="../detail/detail?goodId=2000" class="view-section1-item">
+            <image src="{{item}}" class="image-section1"></image>
+        </navigator>
+    </block>
+</view>
+
+<!-- 商品列表  -->
+<view wx:for="{{result.categorys}}" class="view-section2"  wx:key="{{index}}">
+    <!--title  -->
+    <navigator url="../detail/detail?goodId=3000" style="height: 460rpx;border-top:20rpx solid #dddddd;">
+      <image src="{{item.titleImage}}" class='image-title-section2'></image>
+    </navigator>
+
+    <!--九宫格列表  -->
+    <view class="view-section2-gridview">
+       <block wx:for="{{item.items}}" wx:for-item="itemData"  wx:key="{{index}}"> 
+            <navigator 
+            url="../detail/detail?goodId={{itemData.id}}"   
+            class="view-section2-gridview-item" >
+                <!--商品图片  -->
+                <image src="{{itemData.imageurl}}" style="width:100%;height:260rpx;"></image>
+                <!--商品信息  -->
+                <view style="margin-left:30rpx;margin-top:20rpx;">
+                  <text class="text-section2-title">{{itemData.title}} \n</text>
+                  <text class="text-section2-descp">{{itemData.descp}} \n</text>
+                  <text class="text-section2-price">{{itemData.price}}元起</text>
+                </view>
+            </navigator>
+       </block>
+    </view>
+
+</view>
+
+</view>
