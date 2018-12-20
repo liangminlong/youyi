@@ -1,0 +1,20 @@
+<import src="../order-item/order-item-template.wxml" />
+
+<template name="sentitemTemplate">
+  <template is="orderitemTemplate" />
+  <view class='line-container'>
+    <view class='line'></view>
+  </view>
+  <view class='item-container'>
+    <view class='image-container'>
+      <image class="product-image" src='/images/product01.png'></image>
+      <image class="product-image" src='/images/product02.png'></image>
+      <image class="product-image" src='/images/product03.png'></image>
+      <image class="product-image" src='/images/product04.png'></image>
+    </view>
+    <view class='text-container'>
+      <text class='deal-status'>未交易</text>
+      <text class="amount">￥380.00</text>
+    </view>
+  </view>
+</template>

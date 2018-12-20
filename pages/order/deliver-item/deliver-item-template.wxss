@@ -1,0 +1,58 @@
+@import "../order-item/order-item-template.wxss";
+
+.line{
+height: 1px;
+width: 650rpx;
+background-color: #eee;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 710rpx;
+  background-color: #fff;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx 30rpx 20rpx 30rpx;
+}
+
+.icon-address {
+  height: 28rpx;
+  width: 28rpx;
+  margin-top: 8rpx;
+  margin-right: 12rpx;
+}
+
+.address {
+  font-size: 30rpx;
+  color: #666;
+  line-height: 45rpx;
+  width: 610rpx;
+}
+
+.btn-container {
+  width: 710rpx;
+  padding-bottom: 30rpx;
+}
+
+.btn-copy {
+  width: 150rpx;
+  height: 60rpx;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid #ddd;
+  float: right;
+  margin-right: 30rpx;
+}
+.btn-line-hover{
+  background-color: #f3f3f3;
+}
+.copy {
+  font-size: 26rpx;
+  color: #232323;
+  line-height: 60rpx;
+}

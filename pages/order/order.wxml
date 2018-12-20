@@ -1,0 +1,30 @@
+<view class="container">
+<!-- 点击商家名称进入登录页，是个临时入口，请去掉 -->
+  <text class="shop-name" bindtap="toLogin">500YEAR专卖店(时尚天河店)</text>
+  <view class="tab-main" bindtap="toNew">
+    <text class="title">新订单</text>
+    <view class="vloume-container">
+      <text class="volume">22</text>
+    </view>
+  </view>
+  <view class="tab-main" bindtap="toProcess">
+    <text class="title">待处理</text>
+    <text class="volume">30</text>
+  </view>
+  <view class="tab-main" bindtap="toDeliver">
+    <text class="title">待发货</text>
+    <text class="volume">26</text>
+  </view>
+  <view class="tab-main" bindtap="toSent">
+    <text class="title">已寄出</text>
+    <text class="volume">48</text>
+  </view>
+  <view class="tab-container">
+    <view class="tab-2nd" bindtap="toHistory">
+      <text class="title-2nd">历史订单</text>
+    </view>
+    <view class="tab-2nd" bindtap="toReturn">
+      <text class="title-2nd">退回处理</text>
+    </view>
+  </view>
+</view>

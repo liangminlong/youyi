@@ -1,0 +1,45 @@
+page {
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-order {
+  height: 60rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 35rpx 0 35rpx 0;
+}
+
+.time {
+  font-size: 34rpx;
+  color: #232323;
+  font-weight: bold;
+  line-height: 60rpx;
+  margin-left: 30rpx;
+}
+
+.btn {
+  width: 150rpx;
+  height: 60rpx;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #399f76;
+  float: right;
+  margin-right: 30rpx;
+}
+
+.btn-hover {
+  background-color: #286f52;
+}
+
+.btn-text {
+  font-size: 26rpx;
+  color: #fff;
+  line-height: 60rpx;
+}

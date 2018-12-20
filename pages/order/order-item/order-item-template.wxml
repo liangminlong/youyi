@@ -1,0 +1,7 @@
+<template name="orderitemTemplate">
+  <view class='order-item'>
+    <text class='shop-order-number'>20190213-A18</text>
+    <image class='icon-arrow' src='/images/icon/arrow-right.png'></image>
+    <text class='status'>订单状态</text>
+  </view>
+</template>

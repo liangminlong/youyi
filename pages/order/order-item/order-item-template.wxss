@@ -1,0 +1,27 @@
+.order-item{
+  height: 60rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 35rpx 0 35rpx 0;
+}
+.shop-order-number{
+  font-size: 34rpx;
+  color: #232323;
+  font-weight: bold;
+  margin-left: 30rpx;
+  vertical-align: middle;
+}
+.icon-arrow{
+  height: 28rpx;
+  width: 28rpx;
+  margin-left: 10rpx;
+  vertical-align: middle;
+}
+.status{
+  font-size: 30rpx;
+  color: #399F76;
+  line-height: 60rpx;
+  float: right;
+  margin-right: 30rpx;
+}

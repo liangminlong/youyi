@@ -1,0 +1,5 @@
+<import src="../deliver-item/deliver-item-template.wxml" />
+
+<view class='container'>
+  <template is="deliveritemTemplate" />
+</view>

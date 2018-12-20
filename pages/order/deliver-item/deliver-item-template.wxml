@@ -1,0 +1,17 @@
+<import src="../order-item/order-item-template.wxml" />
+
+<template name="deliveritemTemplate">
+  <template is="orderitemTemplate" />
+  <view class='item-container'>
+    <view class='line'></view>
+    <view class='address-container'>
+      <image class='icon-address' src='/images/icon/address.png'></image>
+      <text class='address'>张三，13800138000，广东省广州市天河区黄埔大道888号B座803</text>
+    </view>
+    <view class="btn-container">
+      <view class='btn-copy' hover-class="btn-line-hover" hover-stay-time="20">
+        <text class='copy'>复制地址</text>
+      </view>
+    </view>
+  </view>
+</template>

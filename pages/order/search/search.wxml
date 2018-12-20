@@ -1,0 +1,18 @@
+<import src="../sent-item/sent-item-template.wxml" />
+
+<!--SearchBar布局-->
+<view class="SearchBar">
+  <view class="search-cell">
+    <image class="icon-search" src="/images/icon/search.png"></image>
+    <input class="input-text" auto-focus placeholder="请输入买家账号/商家受理号" placeholder-class="search-placeholder" />
+    <image class="icon-cancel" src="/images/icon/input-cancel.png"></image>
+  </view>
+  <view class="btn-cancel">
+    <text>取消</text>
+  </view>
+</view>
+
+<!-- 列表布局 -->
+<view class='list-container'>
+  <template is="sentitemTemplate" />
+</view>

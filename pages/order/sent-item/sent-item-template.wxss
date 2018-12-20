@@ -1,0 +1,62 @@
+@import "../order-item/order-item-template.wxss";
+
+.line-container {
+  height: 1px;
+  width: 710rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  height: 1px;
+  width: 650rpx;
+  background-color: #eee;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  height: 140rpx;
+  width: 710rpx;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.image-container {
+  margin-left: 30rpx;
+  width: 360rpx;
+  height: 80rpx;
+  margin-top: 30rpx;
+}
+
+.product-image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10rpx;
+  box-sizing: border-box;
+  border: 1px solid ddd;
+  border-radius: 2px;
+}
+
+.text-container {
+  width: 240rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 30rpx;
+  margin-top: 28rpx;
+}
+
+.deal-status {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.amount {
+  font-size: 30rpx;
+  color: #232323;
+  margin-top: 5rpx;
+}

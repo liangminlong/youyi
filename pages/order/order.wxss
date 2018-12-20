@@ -1,0 +1,62 @@
+page {
+  background-color: #399f76;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-name {
+  font-size: 30rpx;
+  color: #fff;
+  margin-top: 10rpx;
+}
+
+.tab-main {
+  display: flex;
+  flex-direction: row;
+  width: 690rpx;
+  height: 164rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 42rpx;
+  color: #232323;
+  margin-left: 40rpx;
+  line-height: 164rpx;
+}
+
+.volume {
+  font-size: 48rpx;
+  color: #232323;
+  margin-right: 40rpx;
+  line-height: 164rpx;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  width: 690rpx;
+  justify-content: space-between;
+}
+
+.tab-2nd {
+  width: 335rpx;
+  height: 164rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  text-align: center;
+}
+
+.title-2nd {
+  font-size: 42rpx;
+  color: #232323;
+  line-height: 164rpx;
+}

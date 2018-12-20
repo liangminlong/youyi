@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-logo {
+  height: 60rpx;
+  width: 500rpx;
+  margin-top: 80rpx;
+}
+
+.app-name {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #316852;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.input-cell {
+  border: 1px solid #ddd;
+  width: 610rpx;
+  height: 100rpx;
+  border-radius: 3px;
+  background-color: #f3f3f3;
+  margin-top: 30rpx;
+  padding: 0 20rpx 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+.placeholder{
+  font-size: 30rpx;
+  color: #999;
+}
+
+.input-text {
+  font-size: 30rpx;
+  color: #232323;
+}
+
+.btn-small {
+  width: 170rpx;
+  height: 60rpx;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #399f76;
+  float: right;
+}
+
+.btn-small-text {
+  font-size: 26rpx;
+  color: #fff;
+  line-height: 60rpx;
+}
+
+.btn {
+  width: 650rpx;
+  height: 90rpx;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #399f76;
+  margin-top: 30rpx;
+}
+
+.btn-hover {
+  background-color: #286F52;
+}
+
+.btn-text {
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 90rpx;
+}
